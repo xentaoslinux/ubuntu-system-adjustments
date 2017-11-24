@@ -1,0 +1,469 @@
+ubuntu-system-adjustments (2017.12.24) arok; urgency=medium
+
+  * Memperbaharui berkas debian/*
+    Membuat adjustments untuk Xents OS.
+
+ -- Dindin Hernawan (Xenta OS) <root@dev.xentaos.org>  Wed, 15 Nov 2017 21:10:21 +0700 
+
+ubuntu-system-adjustments (2017.05.21) sonya; urgency=medium
+
+  * Remove adjustments on atril/eom/pluma.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 21 May 2017 13:04:50 +0100
+
+ubuntu-system-adjustments (2017.05.11) sonya; urgency=medium
+
+  * Don't adjust grub's 10_linux
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 11 May 2017 11:18:00 +0100
+
+ubuntu-system-adjustments (2016.09.02) sarah; urgency=medium
+
+  * Added links to define python oneconf settings
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 02 Sep 2016 17:00:32 +0100
+
+ubuntu-system-adjustments (2016.07.23) sarah; urgency=medium
+
+  * Added plasma.desktop to the list of MDM default sessions
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 23 Jul 2016 23:45:55 +0200
+
+ubuntu-system-adjustments (2016.06.24) sarah; urgency=medium
+
+  * Override ntp and hddtemp systemd services for a faster boot
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 24 Jun 2016 12:35:01 +0100
+
+ubuntu-system-adjustments (2016.05.17) sarah; urgency=medium
+
+  * Hide openjdk8 policy tool menu entry
+  * Hide imagemagik menu entries
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 17 May 2016 12:30:08 +0100
+
+ubuntu-system-adjustments (2016.04.07) sarah; urgency=medium
+
+  * Removed setting for APT cache-start (fixed upstream: https://bugs.launchpad.net/linuxmint/+bug/1445436)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 07 Apr 2016 11:53:51 +0100
+
+ubuntu-system-adjustments (2016.01.19.1) sarah; urgency=medium
+
+  * Migrated adjustments from postinst script to menu adjustments
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 19 Jan 2016 18:02:17 +0000
+
+ubuntu-system-adjustments (2016.01.19) sarah; urgency=medium
+
+  * Removed synaptic pkexec's adjustment (no longer needed in xenial)
+  * Edited upstream LSB info (trusty->xenial)
+  * Commented out upstart.execute (obsolete in xenial)
+  * Removed Logitech udev rules (fixed upstream in xenial)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 19 Jan 2016 11:55:33 +0000
+
+ubuntu-system-adjustments (2015.11.26) rosa; urgency=medium
+
+  * Redirect yelp ubuntu-help to Mint documentation when ubuntu-docs isn't installed
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 26 Nov 2015 18:34:10 +0000
+
+ubuntu-system-adjustments (2015.11.24) rosa; urgency=medium
+
+  * Added /lib/udev/rules.d/96-ubuntu-system-adjustments.rules to fix Logitech Mice battery detection (https://bugs.launchpad.net/ubuntu/+source/upower/+bug/1448834)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 24 Nov 2015 13:06:36 +0000
+
+ubuntu-system-adjustments (2015.11.15) rosa; urgency=medium
+
+  * Prevented virtualbox client from using notify-send on session start
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 15 Nov 2015 14:09:56 +0000
+
+ubuntu-system-adjustments (2015.11.08.1) rosa; urgency=medium
+
+  * Set APT start-cache to 104857600
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 08 Nov 2015 19:42:35 +0000
+
+ubuntu-system-adjustments (2015.11.08) rosa; urgency=medium
+
+  * Moved orca to accessories
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 08 Nov 2015 18:56:16 +0000
+
+ubuntu-system-adjustments (2015.09.07) rafaela; urgency=medium
+
+  * Fixed a typo in the French translation for synaptic's polkit rule
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 07 Sep 2015 10:08:31 +0100
+
+ubuntu-system-adjustments (2015.06.24) rafaela; urgency=medium
+
+  * Moved mate-dictionnary, atril and mate colot selector to Accessories menu
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 24 Jun 2015 21:36:31 +0200
+
+ubuntu-system-adjustments (2015.06.12.3) rafaela; urgency=medium
+
+  * Removed modemmanager adjustment (it doesn't help, we get blocked at nm-dispatcher level then).
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 12 Jun 2015 15:44:32 +0200
+
+ubuntu-system-adjustments (2015.06.12.2) rafaela; urgency=medium
+
+  * Fixed typo "mate-dictionnary"
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 12 Jun 2015 15:04:16 +0200
+
+ubuntu-system-adjustments (2015.06.12.1) rafaela; urgency=medium
+
+  * Attempt to stop modemmanager immediately when shutting down
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 12 Jun 2015 13:10:51 +0200
+
+ubuntu-system-adjustments (2015.06.12) rafaela; urgency=medium
+
+  * Removed caja adjustment
+  * Moved menu adjustements to new mintsystem for Evince, LO-Draw, LO-Maths
+  * Enforce generic names in MATE
+  * Used an execution adjustment to adjust grub title
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 12 Jun 2015 10:34:02 +0200
+
+ubuntu-system-adjustments (2015.06.09) rafaela; urgency=medium
+
+  * Removed /etc/grub.d/10_linux adjustment
+  * Redefined menu adjustments to use new mintsystem features
+  * Removed AptonCD adjustment
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 09 Jun 2015 17:23:31 +0200
+
+ubuntu-system-adjustments (2015.06.08) rafaela; urgency=medium
+
+  * Fixed amcccle not starting in admin mode
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 08 Jun 2015 14:34:56 +0200
+
+ubuntu-system-adjustments (2014.11.19) rebecca; urgency=medium
+
+  * Reduced startcaja latency to 1 second
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 19 Nov 2014 15:00:18 +0100
+
+ubuntu-system-adjustments (2014.11.13) rebecca; urgency=medium
+
+  * Don't override yelp when called without arguments (fixed in yelp itself)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 13 Nov 2014 15:34:21 +0100
+
+ubuntu-system-adjustments (2014.05.09) qiana; urgency=medium
+
+  * Added fr and de translations to /usr/share/polkit-1/actions/com.ubuntu.pkexec.synaptic.policy
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 09 May 2014 15:59:29 +0100
+
+ubuntu-system-adjustments (2014.05.08.2) qiana; urgency=medium
+
+  * Added /etc/upstream-release/lsb-release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 08 May 2014 17:30:55 +0100
+
+ubuntu-system-adjustments (2014.05.08.1) qiana; urgency=medium
+
+  * Revert last change. EFI distributor is still hardcoded in trusty so we're going back to using "Ubuntu".
+  * Added triggers
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 08 May 2014 15:37:25 +0100
+
+ubuntu-system-adjustments (2014.05.08) qiana; urgency=medium
+
+  * Use "LinuxMint" as GRUB_DISTRIBUTOR (affects EFI name)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 08 May 2014 12:36:12 +0100
+
+ubuntu-system-adjustments (2014.05.07.2) qiana; urgency=medium
+
+  * Move evince to Accessories
+  * Move LibreOffice Maths to Office
+  * Start vino server in MATE/Xfce
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 07 May 2014 21:33:01 +0100
+
+ubuntu-system-adjustments (2014.05.07.1) qiana; urgency=medium
+
+  * Adjust /etc/init/plymouth-shutdown.conf for mdm
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 07 May 2014 11:17:34 +0100
+
+ubuntu-system-adjustments (2014.05.07) qiana; urgency=medium
+
+  * Updated upstart adjustment
+  * Fixed typo in user-dirs-update-gtk adjustment
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 07 May 2014 03:46:27 +0100
+
+ubuntu-system-adjustments (2014.05.06) qiana; urgency=low
+
+  * Move caja adjustements to sed
+  * Show user-dirs-update-gtk in Mate and XFCE
+  * Show vino in Mate and XFCE
+
+ -- Frédéric Gaudet <fred@linuxmint.com>  Tue, 06 May 2014 16:53:08 +0200
+
+ubuntu-system-adjustments (2014.05.02) qiana; urgency=low
+
+  * Remove nm-applet_mate.desktop
+
+ -- Frédéric Gaudet <fred@linuxmint.com>  Fri, 02 May 2014 09:17:27 +0200
+
+ubuntu-system-adjustments (2013.11.24) petra; urgency=low
+
+  * Fixes in upstart adjustment
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 24 Nov 2013 12:30:20 +0000
+
+ubuntu-system-adjustments (2013.11.21) petra; urgency=low
+
+  * Adjust upstart DM jobs which don't support MDM
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 21 Nov 2013 13:25:25 +0000
+
+ubuntu-system-adjustments (2013.11.12.1) petra; urgency=low
+
+  * In /usr/bin/startcaja pass on arguments to caja (fixes open-as-root extension)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 Nov 2013 16:02:00 +0000
+
+ubuntu-system-adjustments (2013.11.12) petra; urgency=low
+
+  * XDG_RUNTIME_DIR is a global issue, don't tackle it just for caja.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 11 Nov 2013 23:40:56 +0000
+
+ubuntu-system-adjustments (2013.11.11) petra; urgency=low
+
+  * Adjusted caja to work around the x-caja-desktop bugs
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 11 Nov 2013 11:12:41 +0000
+
+ubuntu-system-adjustments (2013.11.10) petra; urgency=low
+
+  * More fixes to yelp adjustment
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 10 Nov 2013 18:26:00 +0000
+
+ubuntu-system-adjustments (2013.11.08) petra; urgency=low
+
+  * Fixes to yelp adjustment
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 08 Nov 2013 14:38:18 +0000
+
+ubuntu-system-adjustments (2013.11.06) petra; urgency=low
+
+  * Added /etc/xdg/autostart/nm-applet_mate.desktop
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 06 Nov 2013 10:47:27 +0000
+
+ubuntu-system-adjustments (2013.11.05) petra; urgency=low
+
+  * Use Mint-X mdm theme by default
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 05 Nov 2013 12:38:06 +0000
+
+ubuntu-system-adjustments (2013.11.04) petra; urgency=low
+
+  * Added fix for EFI - Changed GRUB_DISTRIBUTOR to Ubuntu
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 04 Nov 2013 10:47:57 +0000
+
+ubuntu-system-adjustments (2013.10.29) petra; urgency=low
+
+  * Fixed a few bugs in yelp
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 29 Oct 2013 14:53:17 +0000
+
+ubuntu-system-adjustments (2013.10.26.1) petra; urgency=low
+
+  * Refined yelp override
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 26 Oct 2013 20:40:49 +0100
+
+ubuntu-system-adjustments (2013.10.26) petra; urgency=low
+
+  * Removed xhost+
+  * Added comment to ctrl-alt-backspace autostart
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 26 Oct 2013 20:01:05 +0100
+
+ubuntu-system-adjustments (2013.10.24) petra; urgency=low
+
+  * Hide Yelp in menu
+  * Hide Java policy tool and IcedTea config tool in menu
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 24 Oct 2013 12:26:00 +0100
+
+ubuntu-system-adjustments (2013.09.02) petra; urgency=low
+
+  * Replaced MDM adjustment with new /usr/share/mdm/distro.conf
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 02 Sep 2013 23:44:51 +0100
+
+ubuntu-system-adjustments (2013.05.14) olivia; urgency=low
+
+  * Removed MDM sounds (avoid potential conflicts with pulse)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 14 May 2013 23:40:41 +0100
+
+ubuntu-system-adjustments (2013.05.08) olivia; urgency=low
+
+  * Changed default MDM theme
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 08 May 2013 23:07:54 +0100
+
+ubuntu-system-adjustments (2013.02.28.1) olivia; urgency=low
+
+  * Removed gufw adjustment
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 28 Feb 2013 16:25:52 +0000
+
+ubuntu-system-adjustments (2013.02.28) olivia; urgency=low
+
+  * Removed gnome-screensaver adjustment
+  * Updated MDM adjustment
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 28 Feb 2013 14:27:10 +0000
+
+ubuntu-system-adjustments (2012.12.17) nadia; urgency=low
+
+  * Adjusted gufw.desktop
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 17 Dec 2012 11:54:29 +0000
+
+ubuntu-system-adjustments (2012.11.30) nadia; urgency=low
+
+  * Start gnome-screensaver in Xfce session
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 30 Nov 2012 16:14:14 +0000
+
+ubuntu-system-adjustments (2012.11.15) nadia; urgency=low
+
+  * Removed sounds when login in GNOME desktop
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 15 Nov 2012 13:54:14 +0000
+
+ubuntu-system-adjustments (2012.11.02) nadia; urgency=low
+
+  * Adjusted gnome-help
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 02 Nov 2012 16:10:30 +0000
+
+ubuntu-system-adjustments (2012.10.24) nadia; urgency=low
+
+  * Adjusted gnome-screensaver 3.6
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 24 Oct 2012 15:32:52 +0100
+
+ubuntu-system-adjustments (2012.10.03) nadia; urgency=low
+
+  * Updated Software Center file
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 03 Oct 2012 16:26:59 +0100
+
+ubuntu-system-adjustments (2012.05.19) maya; urgency=low
+
+  * Changed path for default MDMLogin logo
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 19 May 2012 16:08:41 +0100
+
+ubuntu-system-adjustments (2012.05.12) maya; urgency=low
+
+  * Added MDM sounds for login ready and login successful
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 12 May 2012 19:45:43 +0100
+
+ubuntu-system-adjustments (2012.05.11) maya; urgency=low
+
+  * Adjusted yelp
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 11 May 2012 18:16:59 +0100
+
+ubuntu-system-adjustments (2012.05.10) maya; urgency=low
+
+  * Added adjustment for /etc/grub/grub.d/10_linux
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 10 May 2012 12:23:00 +0100
+
+ubuntu-system-adjustments (2012.05.09.2) maya; urgency=low
+
+  * Default config for MDM
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 09 May 2012 21:39:59 +0100
+
+ubuntu-system-adjustments (2012.05.09.1) precise; urgency=low
+
+  * Enabled xhost+ and ctrl_alt_backspace in XDG autostart
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 09 May 2012 18:51:48 +0100
+
+ubuntu-system-adjustments (2012.05.09) maya; urgency=low
+
+  * Added /usr/bin/mate-help
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 09 May 2012 16:16:57 +0100
+
+ubuntu-system-adjustments (2012.05.02) maya; urgency=low
+
+  * Maya
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 02 May 2012 11:42:20 +0100
+
+ubuntu-system-adjustments (2011.10.23) lisa; urgency=low
+
+  * Lisa
+
+ -- Clement Lefebvre <clem@linuxmint.com>  Sun,  23 Oct 2011 14:16:00 +0000
+
+ubuntu-system-adjustments (2011.06.29) katya; urgency=low
+
+  * Fixed typo in AptOnCD menu launcher
+
+ -- Clement Lefebvre <clem@linuxmint.com>  Wed,  29 Jun 2011 10:31:00 +0000
+
+ubuntu-system-adjustments (2011.05.01) katya; urgency=low
+
+  * Removed gnome-classic xsession
+
+ -- Clement Lefebvre <clem@linuxmint.com>  Sun,  1 May 2011 14:23:00 +0000
+
+ubuntu-system-adjustments (2011.04.28) katya; urgency=low
+
+  * Added Linux Mint template for Software Center
+
+ -- Clement Lefebvre <clem@linuxmint.com>  Thu,  28 Apr 2011 11:32:00 +0000
+
+ubuntu-system-adjustments (2011.04.27) katya; urgency=low
+
+  * Katya
+
+ -- Clement Lefebvre <clem@linuxmint.com>  Wed,  27 Apr 2011 19:48:00 +0000
+
+ubuntu-system-adjustments (1.0.2) julia; urgency=low
+
+  * Removed openoffice.org's splash screen
+
+ -- Clement Lefebvre <clem@linuxmint.com>  Mon,  11 Oct 2010 19:54:00 +0000
+
+ubuntu-system-adjustments (1.0.1) julia; urgency=low
+
+  * Fixed typo in adj file
+
+ -- Clement Lefebvre <clem@linuxmint.com>  Mon,  11 Oct 2010 14:55:00 +0000
+
+ubuntu-system-adjustments (1.0.0) julia; urgency=low
+
+  * Initial release
+
+ -- Clement Lefebvre <clem@linuxmint.com>  Mon,  11 Oct 2010 10:48:00 +0000
+

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+        if which systemctl >/dev/null 2>&1
+        then
+            echo "Reloading systemd"
+            systemctl daemon-reload || true
+            systemctl reenable ntp || true
+            systemctl reenable hddtemp || true
+        fi
+    ;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+
+    ;;
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0
+
+

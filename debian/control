@@ -1,11 +1,11 @@
 Source: ubuntu-system-adjustments
 Section: admin
 Priority: optional
-Maintainer: Dindin Hernawan (Xenta OS) <root@dev.xentaos.org>
+Maintainer: Dindin Hernawan (Xenta OS) <dindin-hernawan@yahoo.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.7
-Homepage: https://github.com/xentaos/ubuntu-system-adjustments
-Vcs-Browser: https://github.com/xentaos/ubuntu-system-adjustments.git
+Homepage: https://github.com/xentaoslinux/ubuntu-system-adjustments
+Vcs-Browser: https://github.com/xentaoslinux/ubuntu-system-adjustments.git
 
 Package: ubuntu-system-adjustments
 Architecture: all

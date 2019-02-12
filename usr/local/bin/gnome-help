@@ -6,11 +6,11 @@ import sys
 if (len(sys.argv) > 1):
     args = ' '.join(sys.argv[1:])
     if ('gnome-help' in args) and not os.path.exists('/usr/share/help/C/gnome-help'):
-        os.system ("xdg-open http://www.xentaos.org/p/panduan.html &")
+        os.system ("xdg-open http://www.xentaos.com/p/panduan.html &")
     else:
         os.system ("/usr/bin/yelp %s" % args)
 else:
     if not os.path.exists('/usr/share/help/C/gnome-help'):
-        os.system ("xdg-open http://www.xentaos.org/p/panduan.html &")
+        os.system ("xdg-open http://www.xentaos.com/p/panduan.html &")
     else:
         os.system ('/usr/bin/yelp')

@@ -1,7 +1,14 @@
+ubuntu-system-adjustments (2019.12.24) batik; urgency=medium
+
+  * Memperbaharui berkas debian/*
+    Membuat adjustments untuk Xenta OS.
+
+ -- Dindin Hernawan (Xenta OS) <dindin_hernawan@yahoo.com>  Tue, 12 Feb 2019 10:04:29 +0700 
+
 ubuntu-system-adjustments (2017.12.24) arok; urgency=medium
 
   * Memperbaharui berkas debian/*
-    Membuat adjustments untuk Xents OS.
+    Membuat adjustments untuk Xenta OS.
 
  -- Dindin Hernawan (Xenta OS) <root@dev.xentaos.org>  Wed, 15 Nov 2017 21:10:21 +0700 
 
